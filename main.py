@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from database import database
 from routers import auth, entrenador, rutinas, progreso
+from routers import auth, entrenador, rutinas, progreso, perfil
 
 app = FastAPI(title="FitCoach API")
 
@@ -21,6 +22,7 @@ app.include_router(auth.router)
 app.include_router(entrenador.router)
 app.include_router(rutinas.router)
 app.include_router(progreso.router)
+app.include_router(perfil.router)
 
 
 @app.get("/")

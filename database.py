@@ -13,3 +13,4 @@ database = client[DB_NAME]
 usuarios_collection = database.get_collection("Usuarios")
 rutinas_collection = database.get_collection("Rutinas")
 progreso_collection = database.get_collection("progreso")
+peso_historial_collection = database.get_collection("peso_historial")
